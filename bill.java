@@ -1,7 +1,7 @@
 
 // class object method operators if else 
 /*
-    name
+    name                  
 1.starters
 2.main coarse
 3.Desert
@@ -24,7 +24,7 @@ display again menu
  */
 import java.util.*;
 public class bill{
-    int Menu,Maincourse,total,finalamt,Desert,Starter,Drinks;
+    static int Menu,Maincourse,total,Desert,Starter,Drinks;
 ;
     String  Itemname;
     static char y,n,ans;
@@ -44,7 +44,7 @@ public class bill{
         obj.choice1();
         obj.choice2();
         obj.choice3();
-        obj.totalbill();
+       // obj.totalbill();
 
 
         System.out.println("Do you want to go back to mainmenu?\nEnter yes or no");
@@ -55,7 +55,8 @@ public class bill{
         
         }
         else{
-            System.out.println("Thanks");
+            System.out.println("Thanks for Ordering \nYour final bill is:  "+total);
+            
         }
 
         sc.close();      
@@ -197,19 +198,14 @@ public class bill{
         else{
             System.out.println("Total of deserts: "+total);
         }       
-        
-
-         
      
-        }  
-      
-    
+        }      
 
     }
     public void choice3(){
         
         if(Menu==4){
-            System.out.println("Choose the dish You want to order:(1-4)");
+            System.out.println("Choose the Drink You want to order:(1-4)");
             Scanner sc=new Scanner(System.in);
 
             System.out.println("1.Orange Juice  50rs\n 2.Mocktail  80rs\n 3.Lemonade  60rs\n 4.Mojito  50rs");
@@ -248,8 +244,8 @@ public class bill{
     }  
     
     public void totalbill(){
-        finalamt+=total;
-        System.out.println("Your bill is: "+finalamt);
+        
+        System.out.println("Your bill is: "+total);
     }
 
 
@@ -257,6 +253,11 @@ public class bill{
 
 }
         
+
+
+
+
+
 
 
 
